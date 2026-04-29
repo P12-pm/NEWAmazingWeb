@@ -1,0 +1,277 @@
+/* premium-3d.css */
+
+/* Magnetic buttons utility */
+.btn, .btn-hero-primary, .btn-hero-secondary, .social a {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Perspective Container for Banner */
+.banner__visual {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+
+.banner__image-main img {
+    transform-style: preserve-3d;
+    will-change: transform;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2), 0 0 40px rgba(108, 99, 255, 0.2);
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease;
+}
+
+.banner__image-main img:hover {
+    box-shadow: 0 40px 80px rgba(0,0,0,0.3), 0 0 60px rgba(108, 99, 255, 0.4);
+}
+
+/* Enhancing Floating Cards */
+.banner__float-card {
+    will-change: transform;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__float-card:hover {
+    box-shadow: 0 30px 60px rgba(108, 99, 255, 0.2);
+    border-color: rgba(108, 99, 255, 0.4);
+}
+
+/* Premium 3D Hover on Portfolio */
+.portfolio__single {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease !important;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.portfolio__single:hover {
+    transform: translateY(-15px) scale(1.02) !important;
+    z-index: 10;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.3), 0 0 40px rgba(108, 99, 255, 0.2) !important;
+}
+
+.portfolio__single img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.portfolio__single:hover img {
+    transform: scale(1.1) !important;
+}
+
+.portfolio__single-content {
+    backdrop-filter: blur(8px);
+    background: rgba(20, 20, 20, 0.8) !important;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+    transform: translateZ(30px);
+    transition: background 0.3s ease, transform 0.4s ease !important;
+}
+
+.portfolio__single:hover .portfolio__single-content {
+    background: rgba(30, 30, 30, 0.9) !important;
+    transform: translateZ(50px) translateY(-5px);
+}
+
+/* Global Smooth Scroll tweaks */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Interactive Cursor Premium Styles */
+.mouseCursor.cursor-outer {
+    border: 1px solid rgba(108, 99, 255, 0.8);
+    transition: border-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
+}
+
+.mouseCursor.cursor-inner {
+    background: linear-gradient(135deg, #6c63ff, #e91e63);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+}
+
+/* Glassmorphism additions to Navbar */
+.header .primary-navbar.secondary--navbar {
+    background: rgba(10, 10, 10, 0.75) !important;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Skill Bars 3D Depth */
+.skill-bar-wrapper {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4) !important;
+    overflow: visible !important;
+    border: 1px solid rgba(255,255,255,0.02);
+}
+
+.skill-bar {
+    background: linear-gradient(90deg, #6c63ff, #e91e63) !important;
+    position: relative;
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.5) !important;
+    border-radius: 10px !important;
+}
+
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 10px;
+}
+
+/* Sub-title glowing text */
+.sub-title {
+    text-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
+}
+
+/* Enhancing sections background glow */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.05) 0%, rgba(0,0,0,0) 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Premium Offer Cards Hover */
+.offer__cta-single {
+    transition: transform 0.4s ease, background 0.4s ease, border-color 0.4s ease;
+}
+
+.offer__cta-single:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(108, 99, 255, 0.3);
+}
+
+/* Next Page Gradient Text */
+.next-page .next__text-slider-single h2 a {
+    background: linear-gradient(90deg, #fff, #6c63ff, #e91e63, #fff);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 8s linear infinite;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Circle Light Hover Effect */
+.circleLight {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: overlay;
+}
+
+.portfolio__single:hover .circleLight,
+.offer__cta-single:hover .circleLight,
+.blog__single:hover .circleLight,
+.banner__float-card:hover .circleLight,
+.service-f-single:hover .circleLight,
+.service-t__slider-single:hover .circleLight,
+.project-info-card:hover .circleLight {
+    opacity: 1;
+}
+
+.portfolio__single, .offer__cta-single, .blog__single, .banner__float-card, .service-f-single, .service-t__slider-single, .project-info-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__single-content {
+    position: relative;
+    z-index: 3;
+}
+
+/* Service Interface Animations */
+.service-f-single, .service-t__slider-single, .project-info-card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease !important;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.service-f-single:hover, .service-t__slider-single:hover, .project-info-card:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.3), 0 0 35px rgba(255, 116, 37, 0.2) !important;
+    border-color: rgba(255, 116, 37, 0.4) !important;
+    z-index: 10;
+}
+
+/* Premium Animated Buttons for Services */
+.btn--primary, .btn--secondary, .btn--tertiary {
+    background: linear-gradient(90deg, #ff7425, #ff9a5c, #e91e63, #ff7425);
+    background-size: 300% auto;
+    animation: gradientBtn 4s linear infinite;
+    box-shadow: 0 4px 15px rgba(255, 116, 37, 0.3);
+    border: none !important;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    color: #fff !important;
+}
+
+@keyframes gradientBtn {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.btn--primary:hover, .btn--secondary:hover, .btn--tertiary:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 116, 37, 0.5);
+}
+
+.btn--primary::after, .btn--secondary::after, .btn--tertiary::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn--primary:hover::after, .btn--secondary:hover::after, .btn--tertiary:hover::after {
+    animation: shine-btn 1.5s infinite;
+}
+
+@keyframes shine-btn {
+    0% { left: -100%; }
+    100% { left: 200%; }
+}
+
+/* Fix z-index for content inside service cards so it sits above circle light */
+.service-f-single .intro-btn, .service-f-single .single-item, 
+.service-t__slider-single .intro, .service-t__slider-single ul, 
+.project-info-card h4, .project-info-card ul {
+    position: relative;
+    z-index: 3;
+}

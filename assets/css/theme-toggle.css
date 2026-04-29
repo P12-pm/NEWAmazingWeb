@@ -1,0 +1,516 @@
+/* ============================================
+   DARK / LIGHT MODE THEME SYSTEM
+   Amazing Webtech — Theme Toggle
+   ============================================ */
+
+/* === Light Mode Color Overrides === */
+[data-theme="light"] {
+    --theme-bg: #f5f5f7;
+    --theme-color: #1d1d1f;
+    --white: #ffffff;
+    --black: #000000;
+    --primary-color: #e85d04;
+    --secondary-color: #6b6b6b;
+    --tertiary-color: #f0f0f2;
+    --quaternary-color: #e8e8ea;
+    --quinary-color: #555555;
+    --senary-color: #e2e2e5;
+    --septenary-color: #eaeaed;
+    --octonary-color: #dcdcdf;
+    --nonary-color: #333333;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    --shadow-secondary: 0 8px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* === Light Mode — Body & Backgrounds === */
+[data-theme="light"] body {
+    background-color: #f5f5f7 !important;
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] #smooth-content {
+    background-color: #f5f5f7 !important;
+}
+
+/* === Light Mode — Navbar === */
+[data-theme="light"] .primary-navbar.cmn-nav {
+    background: rgba(255, 255, 255, 0.88) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+[data-theme="light"] .navbar__menu ul li a {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .navbar__menu ul li a:hover,
+[data-theme="light"] .navbar__menu ul li.active > a {
+    color: #e85d04 !important;
+}
+
+[data-theme="light"] .navbar__dropdown-label::after {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .btn--secondary,
+[data-theme="light"] .navbar__options .btn--secondary {
+    background: #e85d04 !important;
+    color: #fff !important;
+    border-color: #e85d04 !important;
+}
+
+/* Navbar dropdown */
+[data-theme="light"] .navbar__sub-menu {
+    background: rgba(255, 255, 255, 0.97) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+}
+
+[data-theme="light"] .navbar__sub-menu li a {
+    color: #444 !important;
+}
+
+[data-theme="light"] .navbar__sub-menu li a:hover {
+    color: #e85d04 !important;
+    background: rgba(232, 93, 4, 0.06) !important;
+}
+
+/* === Light Mode — Banner Section === */
+[data-theme="light"] .cmn-banner {
+    background-color: #1a1a2e !important;
+}
+
+[data-theme="light"] .cmn-banner .title,
+[data-theme="light"] .cmn-banner p,
+[data-theme="light"] .cmn-banner .breadcrumb-item,
+[data-theme="light"] .cmn-banner .breadcrumb-item a {
+    color: #fff !important;
+}
+
+/* === Light Mode — Section Backgrounds === */
+[data-theme="light"] .section {
+    background-color: #f5f5f7 !important;
+}
+
+[data-theme="light"] .section__header .title,
+[data-theme="light"] .section__header h2 {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .section__header p,
+[data-theme="light"] .section__header .primary-text {
+    color: #6b6b6b !important;
+}
+
+[data-theme="light"] .section__header .sub-title {
+    background: rgba(232, 93, 4, 0.08) !important;
+    border-color: rgba(232, 93, 4, 0.15) !important;
+    color: #e85d04 !important;
+}
+
+/* === Light Mode — Cards === */
+[data-theme="light"] .blog__single,
+[data-theme="light"] .portfolio__single,
+[data-theme="light"] .service-t__slider-single,
+[data-theme="light"] .service-f-single {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .blog__single:hover,
+[data-theme="light"] .portfolio__single:hover {
+    border-color: rgba(232, 93, 4, 0.2) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08), 0 0 20px rgba(232, 93, 4, 0.06) !important;
+}
+
+[data-theme="light"] .blog__single-content h4 a,
+[data-theme="light"] .portfolio__single-content h4 a {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .blog__single-content h4 a:hover {
+    color: #e85d04 !important;
+}
+
+[data-theme="light"] .blog__single-meta p,
+[data-theme="light"] .blog__single-content p {
+    color: #6b6b6b !important;
+}
+
+/* === Light Mode — Text Elements === */
+[data-theme="light"] h1, [data-theme="light"] h2,
+[data-theme="light"] h3, [data-theme="light"] h4,
+[data-theme="light"] h5, [data-theme="light"] h6 {
+    color: #000000 !important;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .paragraph p {
+    color: #555 !important;
+}
+
+[data-theme="light"] a {
+    color: #1d1d1f;
+}
+
+[data-theme="light"] a:hover {
+    color: #e85d04 !important;
+}
+
+/* === Light Mode — Accordion / FAQ === */
+[data-theme="light"] .accordion-item {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .accordion-item:has(.accordion-button:not(.collapsed)) {
+    border-color: rgba(232, 93, 4, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(232, 93, 4, 0.06);
+}
+
+[data-theme="light"] .accordion-button {
+    color: #1d1d1f !important;
+    background: transparent !important;
+}
+
+[data-theme="light"] .accordion-button:not(.collapsed) {
+    color: #e85d04 !important;
+    background: rgba(232, 93, 4, 0.03) !important;
+}
+
+[data-theme="light"] .accordion-body {
+    color: #666 !important;
+}
+
+/* === Light Mode — Team Cards === */
+[data-theme="light"] .team-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .team-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(232, 93, 4, 0.15) !important;
+}
+
+[data-theme="light"] .team-card h4 {
+    color: #1d1d1f !important;
+}
+
+/* === Light Mode — Testimonial Cards === */
+[data-theme="light"] .testimonial-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .testimonial-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-theme="light"] .testimonial-text {
+    color: #555 !important;
+}
+
+/* === Light Mode — Project Info Card === */
+[data-theme="light"] .project-info-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .project-info-item {
+    border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+/* === Light Mode — Service Detail Sidebar === */
+[data-theme="light"] .service-detail-list li {
+    color: #555 !important;
+    border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .service-detail-list li:hover {
+    color: #1d1d1f !important;
+}
+
+/* === Light Mode — CTA Section === */
+[data-theme="light"] .cta-two-wrapper {
+    background: #1a1a2e !important;
+}
+
+[data-theme="light"] .cta-two-wrapper h2,
+[data-theme="light"] .cta-two-wrapper h5,
+[data-theme="light"] .cta-two-wrapper span,
+[data-theme="light"] .cta-two-wrapper a {
+    color: #fff !important;
+}
+
+/* === Light Mode — Footer === */
+[data-theme="light"] .footer {
+    background: #1a1a2e !important;
+}
+
+[data-theme="light"] .footer h5,
+[data-theme="light"] .footer p,
+[data-theme="light"] .footer a,
+[data-theme="light"] .footer .footer__single-meta a,
+[data-theme="light"] .footer .footer__copyright-text p {
+    color: #ccc !important;
+}
+
+[data-theme="light"] .footer a:hover {
+    color: #e85d04 !important;
+}
+
+[data-theme="light"] .footer__copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="light"] .footer .input-email input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #fff !important;
+}
+
+/* === Light Mode — Breadcrumb === */
+[data-theme="light"] .breadcrumb {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* === Light Mode — Scroll to Top === */
+[data-theme="light"] .progress-wrap {
+    box-shadow: 0 0 15px rgba(232, 93, 4, 0.12) !important;
+}
+
+/* === Light Mode — Mobile Menu === */
+[data-theme="light"] .mobile-menu__wrapper {
+    background: rgba(255, 255, 255, 0.98) !important;
+}
+
+[data-theme="light"] .mobile-menu__wrapper a {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .mobile-menu__header .close-mobile-menu i {
+    color: #1d1d1f !important;
+}
+
+/* === Light Mode — Service Page Content === */
+[data-theme="light"] .service-f-single .single-item,
+[data-theme="light"] .toggle-service-f {
+    background: #fff !important;
+    border-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .service-f-single .intro-btn h4 {
+    color: #1d1d1f !important;
+}
+
+[data-theme="light"] .service-f-single:hover .intro-btn h4 {
+    color: #e85d04 !important;
+}
+
+/* === Light Mode — Our Services Grid Cards === */
+[data-theme="light"] .service-single-wrapper {
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* === Light Mode — Preloader === */
+[data-theme="light"] #preloader {
+    background: #f5f5f7 !important;
+}
+
+/* === Light Mode — Selection === */
+[data-theme="light"] ::selection {
+    background: #e85d04;
+    color: #fff;
+}
+
+/* === Light Mode — Scrollbar === */
+[data-theme="light"] body::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+[data-theme="light"] body::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+/* === Light Mode — Index / Home Hero === */
+[data-theme="light"] .banner {
+    background-color: #1a1a2e !important;
+}
+
+[data-theme="light"] .banner .title,
+[data-theme="light"] .banner p,
+[data-theme="light"] .banner .sub-title {
+    color: #fff !important;
+}
+
+/* === Light Mode — About Section === */
+[data-theme="light"] .agency {
+    background: #f5f5f7 !important;
+}
+
+/* === Light Mode — Counter / Stats === */
+[data-theme="light"] .counter__single h3 {
+    color: #e85d04 !important;
+}
+
+/* === Light Mode Inputs === */
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+    background: #fff !important;
+    color: #1d1d1f !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+    color: #999 !important;
+}
+
+/* ===========================
+   THEME TOGGLE BUTTON STYLES 
+   =========================== */
+
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.theme-toggle__btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+    background: linear-gradient(135deg, #e85d04 0%, #ff7425 100%);
+    color: #fff;
+    box-shadow: -4px 4px 20px rgba(232, 93, 4, 0.25);
+}
+
+.theme-toggle__btn:hover {
+    width: 56px;
+    box-shadow: -6px 6px 30px rgba(232, 93, 4, 0.35);
+}
+
+.theme-toggle__btn i {
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.theme-toggle__btn:hover i {
+    transform: rotate(30deg) scale(1.15);
+}
+
+/* Icons state */
+.theme-toggle__btn .fa-sun {
+    display: none;
+}
+
+.theme-toggle__btn .fa-moon {
+    display: inline-block;
+}
+
+[data-theme="light"] .theme-toggle__btn .fa-sun {
+    display: inline-block;
+}
+
+[data-theme="light"] .theme-toggle__btn .fa-moon {
+    display: none;
+}
+
+/* Light mode button style */
+[data-theme="light"] .theme-toggle__btn {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4e 100%);
+    box-shadow: -4px 4px 20px rgba(26, 26, 46, 0.25);
+}
+
+[data-theme="light"] .theme-toggle__btn:hover {
+    box-shadow: -6px 6px 30px rgba(26, 26, 46, 0.35);
+}
+
+/* Smooth transition for all themed elements */
+body,
+.primary-navbar,
+.primary-navbar.cmn-nav,
+.navbar__sub-menu,
+.section,
+.blog__single,
+.portfolio__single,
+.accordion-item,
+.accordion-button,
+.team-card,
+.testimonial-card,
+.project-info-card,
+.footer,
+#smooth-content,
+.mobile-menu__wrapper,
+.service-f-single,
+input, textarea, select,
+h1, h2, h3, h4, h5, h6,
+p, a, span {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+/* Tooltip for toggle */
+.theme-toggle__btn::after {
+    content: 'Light Mode';
+    position: absolute;
+    right: calc(100% + 12px);
+    white-space: nowrap;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: #111;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(8px);
+}
+
+.theme-toggle__btn:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-theme="light"] .theme-toggle__btn::after {
+    content: 'Dark Mode';
+    background: #fff;
+    color: #1d1d1f;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .theme-toggle__btn {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .theme-toggle__btn::after {
+        display: none;
+    }
+}

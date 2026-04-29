@@ -1,0 +1,401 @@
+/* ========================================
+   MOBILE HERO SECTION FIX
+   ======================================== */
+
+/* --- Extra Small Devices (phones, below 576px) --- */
+@media screen and (max-width: 575.98px) {
+
+    /* Banner Section */
+    .banner {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 120px 0 60px !important;
+        overflow: hidden !important;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Banner Content Wrapper */
+    .banner .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .banner__content {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+
+    /* Main Title */
+    .banner__content h1 {
+        font-size: 32px !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        word-break: break-word !important;
+        margin-bottom: 20px !important;
+    }
+
+    .banner__content h1 .text-stroke {
+        font-size: 32px !important;
+        display: inline !important;
+        -webkit-text-stroke-width: 1px !important;
+    }
+
+    /* Interval (arrow + text block) */
+    .banner__content h1 .interval {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        font-size: 26px !important;
+        margin-top: 10px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .banner__content h1 .interval i {
+        font-size: 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Banner Inner Content (paragraph + stats) */
+    .banner__content-inner {
+        margin-top: 20px !important;
+        text-align: center !important;
+    }
+
+    .banner__content-inner p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        padding: 0 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Stats / CTA Counters */
+    .banner__content-inner .cta.section__content-cta {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 30px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .banner__content-inner .cta .single {
+        text-align: center !important;
+        min-width: 100px !important;
+    }
+
+    .banner__content-inner .cta .single h5 {
+        font-size: 28px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .banner__content-inner .cta .single p {
+        font-size: 12px !important;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Video Frame Button */
+    .banner .video-frame.video-btn {
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 30px auto 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .banner .video-frame.video-btn img {
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: contain !important;
+    }
+
+    .banner .video-frame .play-svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    /* Hide decorative lines on mobile */
+    .banner .lines {
+        display: none !important;
+    }
+
+    /* Star decoration */
+    .banner .star {
+        width: 30px !important;
+        height: 30px !important;
+        top: 100px !important;
+        right: 20px !important;
+        opacity: 0.5 !important;
+    }
+}
+
+/* --- Small Devices (landscape phones, 576px - 767.98px) --- */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    .banner {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 130px 0 70px !important;
+        overflow: hidden !important;
+    }
+
+    .banner__content {
+        text-align: center !important;
+    }
+
+    .banner__content h1 {
+        font-size: 40px !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    .banner__content h1 .text-stroke {
+        font-size: 40px !important;
+    }
+
+    .banner__content h1 .interval {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        font-size: 32px !important;
+        margin-top: 10px !important;
+    }
+
+    .banner__content h1 .interval i {
+        font-size: 24px !important;
+        width: 50px !important;
+        height: 50px !important;
+        min-width: 50px !important;
+    }
+
+    .banner__content-inner {
+        margin-top: 25px !important;
+        text-align: center !important;
+    }
+
+    .banner__content-inner p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        max-width: 500px !important;
+        margin: 0 auto 25px !important;
+    }
+
+    .banner__content-inner .cta.section__content-cta {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 40px !important;
+    }
+
+    .banner__content-inner .cta .single {
+        text-align: center !important;
+    }
+
+    .banner__content-inner .cta .single h5 {
+        font-size: 32px !important;
+    }
+
+    /* Banner thumb positioning */
+    .banner .banner-one-thumb {
+        position: relative !important;
+        display: block !important;
+        margin: 30px auto 0 !important;
+        max-width: 300px !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    .banner .video-frame.video-btn {
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 30px auto 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .banner .video-frame.video-btn img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+}
+
+/* --- Medium Devices (tablets, 768px - 991.98px) --- */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    .banner {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 140px 0 80px !important;
+    }
+
+    .banner__content h1 {
+        font-size: 48px !important;
+        line-height: 1.25 !important;
+        text-align: start !important;
+    }
+
+    .banner__content h1 .text-stroke {
+        font-size: 48px !important;
+    }
+
+    .banner__content h1 .interval {
+        font-size: 38px !important;
+        gap: 12px !important;
+    }
+
+    .banner__content-inner {
+        margin-top: 25px !important;
+    }
+
+    .banner__content-inner p {
+        font-size: 15px !important;
+        max-width: 450px !important;
+    }
+
+    /* Side text adjustments */
+    .banner-left-text.banner-social-text,
+    .banner-right-text.banner-social-text {
+        font-size: 11px !important;
+    }
+
+    .banner .video-frame.video-btn {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .banner .video-frame.video-btn img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+/* --- Fix for very small screens (below 360px) --- */
+@media screen and (max-width: 359.98px) {
+
+    .banner {
+        padding: 100px 0 40px !important;
+    }
+
+    .banner__content h1 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+    }
+
+    .banner__content h1 .text-stroke {
+        font-size: 26px !important;
+    }
+
+    .banner__content h1 .interval {
+        font-size: 22px !important;
+        gap: 8px !important;
+    }
+
+    .banner__content h1 .interval i {
+        font-size: 16px !important;
+        width: 34px !important;
+        height: 34px !important;
+        min-width: 34px !important;
+    }
+
+    .banner__content-inner p {
+        font-size: 13px !important;
+    }
+
+    .banner__content-inner .cta .single h5 {
+        font-size: 24px !important;
+    }
+
+    .banner__content-inner .cta .single p {
+        font-size: 11px !important;
+    }
+
+    .banner .video-frame.video-btn {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    .banner .video-frame.video-btn img {
+        width: 65px !important;
+        height: 65px !important;
+    }
+}
+
+/* --- Landscape orientation fix --- */
+@media screen and (max-width: 767.98px) and (orientation: landscape) {
+
+    .banner {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 100px 0 50px !important;
+    }
+
+    .banner__content h1 {
+        font-size: 30px !important;
+    }
+
+    .banner__content h1 .text-stroke {
+        font-size: 30px !important;
+    }
+
+    .banner__content h1 .interval {
+        font-size: 24px !important;
+    }
+
+    .banner__content-inner .cta.section__content-cta {
+        flex-direction: row !important;
+        gap: 40px !important;
+    }
+}
+
+/* ========================================
+   SMOOTH SCROLL FIX FOR MOBILE
+   ======================================== */
+@media screen and (max-width: 991.98px) {
+
+    #smooth-wrapper,
+    #smooth-content {
+        overflow: visible !important;
+        height: auto !important;
+        will-change: auto !important;
+    }
+}
+
+/* ========================================
+   ANIMATION SAFE RESET ON MOBILE
+   ======================================== */
+@media screen and (max-width: 767.98px) {
+    .title-anim .split-line {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    .fade-top,
+    .fade-left,
+    .fade-right {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+}
